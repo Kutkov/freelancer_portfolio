@@ -1,0 +1,100 @@
+//color vars
+$accent: #2574a9;
+$light-grey: #cdcdcd;
+$dark-grey: #7e7e7e;
+$black: #272727;
+
+%shadow {
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+//basic adjustments
+body {
+	-webkit-font-smoothing: antialiased;
+	background: #fafafa;
+	color: $dark-grey;
+	font-family: 'UbuntuL';
+	font-size: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'UbuntuB';
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1rem 0;
+	grid-template-columns: 18rem 3fr;
+	grid-auto-rows: minmax(1fr, auto);
+	grid-gap: 1rem;
+}
+
+.main-content {
+  grid-column: 2;
+  grid-row: 1 / 7;
+
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	max-heigth: 100%;
+}
+
+.tab-pane {
+	margin-top: 1rem;
+	background: white;
+	@extend %shadow;
+
+	.tab-title {
+		display: block;
+		padding: 2rem;
+		border-bottom: 1px dashed $light-grey;
+
+		h3 {
+			color: $accent;
+			margin: 0;
+		}
+	}
+
+	.tab-descr {
+		padding: 2rem; 
+	}
+}
+
+.btn {
+	display: block;
+  padding: .7rem 1.2rem;
+  font-size: 1rem;
+  color: $accent;
+  font-family: UbuntuM;
+  transition: .3s ease .1s;
+  &:hover {
+  	color: white;
+  }
+}

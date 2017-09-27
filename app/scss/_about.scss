@@ -1,0 +1,108 @@
+.about 
+    .tab-descr { 
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1rem;
+    }
+
+.personal {
+    grid-column: 1 / 3;
+    margin-bottom: 2.5rem;
+
+    .personal__item {
+        margin-bottom: 1.5rem;
+    }
+
+    .personal__item__title {
+        font-size: 1rem;
+        color: $black;
+        display: inline;
+    }
+
+    .personal__item__descr {
+        font-size: 1rem;
+        display: inline;
+        padding-left: 0.5rem;
+    }
+}
+
+.skills {
+    grid-column: 3 / 6;
+
+    .skill__title {
+        font-size: 1rem;
+        color: $black;
+        margin: 0 0 0.8rem 0;
+    }
+    
+    .skillbar {
+        position:relative;
+        display:block;
+        margin-bottom:1.5rem;
+        width:100%;
+        background: lighten($light-grey, 15%);
+        height:0.7rem;
+        border-radius: 1rem;
+        transition:0.4s linear;
+        transition-property:width, background-color;
+    }
+
+    .skillbar-bar {
+        height:0.7rem;
+        width:0px;
+        background: $accent;
+        border-radius: 1rem;
+    }
+}
+
+.freelancer {
+    grid-column: 1 / 6;
+
+    h3 {
+        margin-bottom: 1.5rem;
+        color: $black;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.service {
+    grid-column: 1 / 6;
+
+    h3 {
+        grid-column: 1 / 4;
+        margin-bottom: 1.5rem;
+        color: $black;
+    }
+
+    .service-list {
+        flex-flow: row wrap;
+        justify-content: left;
+    }
+
+    .service-item {
+        width: 11rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1.5rem;
+        
+
+        h5 {
+            display: inline;
+            font-size: 1rem;
+        }
+
+        .service-icon {
+            text-align: center;
+            padding: 0.5rem;
+            display: inline-block;
+            vertical-align: middle;
+            color: $accent;
+
+            .fa {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

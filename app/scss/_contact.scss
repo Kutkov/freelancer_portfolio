@@ -1,0 +1,65 @@
+.contact {
+  .tab-descr { 
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2rem;
+  }
+}
+
+.contact-info {
+	h4 {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		font-size: 1.5rem;
+	}
+}
+
+.form {
+	.btn {
+		border-radius: 2rem;
+		background-color: transparent;
+		border: 2px solid $accent;
+		transition: 0.3s linear .1s;
+		&:hover {
+			background: $accent;
+		}
+	}
+
+	.form-group {
+		margin-bottom: 1rem;
+	}
+
+	.form-input {
+		width: 90%;
+		padding: 0.7rem 1rem;
+		font-size: 0.9rem;
+		outline: none;
+		border-radius: 0.2rem;
+		border: 1px solid transparent;
+		background-color: lighten($light-grey, 15%);
+		transition: 0.3s linear .1s;
+
+		&:focus {
+			border: 1px solid $light-grey;
+			background-color: transparent;
+		}
+
+	}
+}
+
+.contact-info {
+
+    .contact-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .title, .descr {
+        font-size: 1rem;
+        display: inline;
+    }
+		.title {
+			color: $black;
+		}
+    .descr {
+        padding-left: 0.5rem;
+    }
+}

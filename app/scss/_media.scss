@@ -1,0 +1,199 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.container {
+		grid-template-columns: 16rem 3fr;
+	}
+	
+	h3 {
+		font-size: 1.3rem;
+	}
+	p {
+		font-size: 0.9rem;
+	}
+
+	.tab-pane {
+		.tab-title {
+			padding: 1.5rem;
+		}
+		.tab-descr {
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	.nav {
+		&__item {
+			font-size: 0.9rem;
+		}
+	}
+
+	.about {
+		.personal__item__title, .personal__item__descr, .skill__title {
+			font-size: 0.9rem;
+		}
+	}
+
+	.portfolio {
+		.tab-descr { 
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+  	}
+		.portfolio-item-name, .portfolio-item-kind {
+			font-size: 1rem;
+		}
+	}
+	.contact {
+		.tab-descr { 
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem;
+  	}
+  	.contact-item {
+			.title, .descr {
+				font-size: 1rem;
+			}
+  	}
+	}
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.container {
+		grid-template-columns: 14rem 3fr;
+	}
+
+	.tab-pane {
+		.tab-title {
+			padding: 1.5rem;
+		}
+		.tab-descr {
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	.profile__socials__icon {
+		font-size: 1.2rem;
+		padding: 0.5rem;
+	}
+
+	.nav {
+		&__item {
+			span {
+				display: none;
+			}
+			.fa {
+				font-size: 1.5rem;
+				padding: 0;
+			}
+		}
+	}
+
+	.about {
+		.tab-descr { 
+        grid-template-columns: 1fr;
+    }
+    .personal {
+    	grid-column:1;
+    	margin-bottom: 0;
+    }
+    .skills {
+    	grid-column:1;
+    }
+
+    .personal__item__title, .personal__item__descr, .skill__title {
+			font-size: 1rem;
+		}
+	}
+
+	.portfolio {
+		.tab-descr { 
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+  	}
+		.portfolio-item-name, .portfolio-item-kind {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.img-responsive {
+		max-width: 100%;
+	}
+	.container {
+		grid-template-columns: 1fr;
+		padding: 1rem;
+
+		.profile {
+			grid-column: 1;
+			grid-row: 1;
+			display: flex;
+			justify-content: center;
+  		flex-flow: row wrap;
+
+			.profile__intro {
+				display: flex;
+			  flex-flow: row wrap;
+			  flex: 1 1 100%;
+  			align-items: center;
+
+			  .profile__photo {
+			  	flex: 1 1 45%;
+			  }
+
+			  .profile__decr {
+			  	flex: 1 1 45%;
+			  	padding-top: 4rem;
+			  	padding-right: 1rem;
+			  	
+			  		&__name {
+							padding-bottom: 1rem;
+							font-size: 1.8rem;
+						}
+
+						&__prof {
+							color: $light-grey;
+							font-size: 1rem;
+							margin: 0;
+						}
+			  }
+			}
+		}
+
+		.main-content {
+			grid-column: 1;
+			grid-row: initial;
+		}
+	}
+	.profile__socials {
+		border-top: transparent;
+		padding: 2rem;
+		&__icon {
+			font-size: 1.5rem;
+			padding: 1rem;
+			margin-right: 1rem;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+	
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+

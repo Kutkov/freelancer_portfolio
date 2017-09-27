@@ -1,0 +1,27 @@
+.edu-list {
+	list-style-type: none;
+}
+
+.edu-item {
+
+	position: relative;
+	margin-bottom: 2rem;
+
+}
+
+.edu-name {
+	position: relative;
+	font-size: 1.2rem;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.edu-period {
+	color: $accent;
+	margin-bottom: 0.5rem;
+	font-family: "UbuntuR";
+}
+
+.edu-specialty {
+	color: $dark-grey;
+}

@@ -1,0 +1,40 @@
+.nav {
+	@extend %shadow;
+	margin: 0;
+	background: white;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.nav__item {
+	text-align: center;
+	border-right: 1px dashed $light-grey;
+	transition: 0.3s linear .1s;
+	padding: 1.5rem;
+	font-family: "UbuntuM";
+	font-size: 1rem;
+	color: $accent;
+	transition: 0.3s ease-out .1s;
+	.fa {
+		font-size: 1.5rem;
+		display: block;
+		padding-bottom: 0.5rem;
+	}
+
+	&:last-child {
+		border: none;
+	}
+
+	&:hover, &:active, &:focus {
+		background-color: $accent;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.current {
+  display: inherit;
+}
